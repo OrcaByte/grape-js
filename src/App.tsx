@@ -1,29 +1,24 @@
-import GjsEditor from '@grapesjs/react';
-import type { Editor } from 'grapesjs';
-import tuiImgEditor from 'grapesjs-tui-image-editor';
+
+import { Routes, Route } from 'react-router-dom';
+import Dashboard from './Pages/Dashboard/index';
+import MovieSelectorDialog from './Pages/Dashboard/MovieSelectorDialog';
+import Studio from './Pages/Studio';
+
+
 
 export default function App() {
-  const onEditor = (editor: Editor) => {
-    console.log('Editor loaded', { editor });
-  };
-
+ 
   return (
     <div>
-      <GjsEditor
-        grapesjs="https://unpkg.com/grapesjs"
-        options={{
-          height: '100vh',
-          storageManager: false,
-        }}
-        plugins={[
-          {
-            id: 'gjs-blocks-basic',
-            src: 'https://unpkg.com/grapesjs-blocks-basic',
-          },
-          tuiImgEditor,
-        ]}
-        onEditor={onEditor}
-      />
+      
+
+        <MovieSelectorDialog/>
+
+        <Routes>
+          <Route path='/' element={<Dashboard/>}/>
+          <Route path='/studio' element={<Studio/>}/>
+        </Routes>
+
     </div>
   );
 }

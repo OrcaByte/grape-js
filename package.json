@@ -10,13 +10,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@grapesjs/react": "^1.0.0",
+    "@hookform/resolvers": "^3.3.2",
+    "@reduxjs/toolkit": "^1.9.7",
+    "axios": "^1.6.2",
+    "framer-motion": "^10.16.5",
     "grapesjs": "^0.21.7",
     "grapesjs-preset-webpage": "^1.0.3",
     "grapesjs-react": "^4.0.1",
     "grapesjs-tui-image-editor": "^1.0.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-color": "^2.19.3",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.20.0",
+    "rxdux-state-manager": "^1.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
